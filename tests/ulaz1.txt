@@ -1,0 +1,54 @@
+@komentar
+.global a, b
+.extern c
+
+.equ a, 15
+.equ b, 511
+
+.section ime, rw-
+.word 444, 5, 6
+
+.data
+
+lab1: 
+.byte 6, 10
+lab2: .skip 8   @komentar i nece se uzeti u obzir	
+.skip 1
+.align 2
+ 
+@komentar
+
+.text
+orb r5h, &c
+orw r1[0], r5
+
+lab3:
+	movw r4, r3
+pop r3
+divb r3[a], r5[b]
+addw r2, 5
+call lab4
+testb r6[55], &d
+jmp $lab3
+iret
+jgt $lab4
+
+.section dva, rwx
+.skip 5
+lab4:
+xchgw r3, r2[5]
+addb r2l, *55
+
+jmp $d
+jmp $d2
+
+.skip 128
+d2:
+
+.bss
+.skip 255
+d: .word
+
+
+.end
+

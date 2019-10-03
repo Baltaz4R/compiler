@@ -1,0 +1,35 @@
+@ovo je komentar
+@   kao  i 	ovo
+.global x, y, z
+
+.equ x, 36
+.equ y, 96
+
+.data
+pr: .byte 5, 11
+pe: .skip 5
+
+.text
+
+.global obrada
+
+.section .nova rwx
+.byte 1, 2, 3, 4
+.word 55
+
+obrada:
+	push r1
+
+	pop r2[0]
+	iret
+	mov r3[x], &pe
+	divb r5[y], r0[x]
+	testw *8, *8
+	call pr
+	jgt $pe
+
+.bss
+.skip 5		@komentar
+.align 16
+
+.end

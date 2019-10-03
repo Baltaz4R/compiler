@@ -1,0 +1,38 @@
+.global a, ext
+.equ a, 5
+.extern blabla
+
+.data
+  	 		 
+lab1: .word 5,6,3
+lab2: .byte 3
+
+labelica:
+.align 4
+lab3:
+  .byte 7
+bla:
+  .word 10, 5, 21
+joj:
+  .byte 5
+ 
+     
+.text
+pop r5
+ext: addb r3l, r4h
+lab4: iret
+
+jmp lab2
+jgt $bla
+
+divw r4, 53
+orb r3[a], r2l
+
+call blabla
+
+.bss
+.skip 2
+.align 8
+
+.end
+

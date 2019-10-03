@@ -1,0 +1,17 @@
+.global globalni
+.extern a
+
+.data
+
+globalni: .word 5
+.byte 3
+.align 4
+
+.text
+movw sp[0],a
+
+.bss
+.skip 5
+
+.end
+
