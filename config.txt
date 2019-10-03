@@ -1,0 +1,16 @@
+Prevodjenje i pokretanje:
+
+Radi se pomoæu gcc kompajlera. Preko terminala pristupiti folderu 
+u kome se nalaze izvršni fajlovi i pokrenuti ih preko komande:
+
+g++ -o projekat -std=c++0x fajl1.cpp fajl2.cpp ... fajlN.cpp
+
+Neophodno je proveriti da li je Ubuntu update-ovan i te provere vršimo na sledeæi naèin:
+
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+sudo apt-get update
+sudo apt-get install g++
+
+Ukoliko je sve do sada prošlo bez problema pokretanje se izvršava komandom:
+
+./projekat ulaz.txt izlaz.txt (ne obavezno ta imena tekstualnih fajlova)
