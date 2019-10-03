@@ -23,7 +23,7 @@ okviru materijala za predavanja i vežbe.
 
 Za one koji nemaju instaliran Linux ponuđena je instalacija u okviru virtuelne mašine VMware Player. Virtuelna mašina se može preuzeti u paviljonu Rašović. U okviru ove virtuelne mašine već su instalirani potrebni alati. Odbrana rešenja projektnog zadatka vrši se isključivo pod prethodno opisanim okruženjem u okviru pomenute virtuelne mašine.
 
-# Zadatak – Asembler ( 25 bodova)
+# Zadatak – Asembler (25 bodova)
 
 Napisati dvoprolazni asembler za procesor opisan u prilogu. Svi potrebni argumenti asemblera zadaju se kroz komandnu liniju prilikom pokretanja. Ulaz asemblera je tekstualni fajl u skladu sa sintaksom opisanom u nastavku. Za potrebe leksičke analize ulaznog tekstualnog fajla dozvoljeno je koristiti generatore leksera. Izlaz asemblera treba da bude predmetni program zapisan u tekstualnom fajlu. Za potrebe učitavanja u emulator dozvoljeno je generisati i binarni fajl pored tekstualnog.
 
